@@ -1,0 +1,30 @@
+.button {
+  background-color: $white;
+  border: 1px solid $black;
+  text-transform: lowercase;
+  padding: 10px 17px;
+  cursor: pointer;
+  display: inline-block;
+
+  &-inverted {
+    text-transform: uppercase;
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: transparent;
+  }
+}
+
+@mixin buttons {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+.button-secondary {
+  display: none;
+
+  @include buttons {
+    display: block;
+    text-transform: uppercase;
+  }
+}

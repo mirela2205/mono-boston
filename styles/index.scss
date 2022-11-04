@@ -12,7 +12,18 @@
 @import './../node_modules/bootstrap/scss/bootstrap-grid';
 @import './../node_modules/bootstrap/scss/bootstrap-utilities';
 
+//reset
+@import './reset';
+
+//variables
+@import './variables';
+
+// common
+@import './common/index';
+
 body {
   font-size: 22px;
   font-family: 'Playfair Display', sans-serif;
+  color: $gray-primary;
+  background-color: $gray-secondary;
 }
