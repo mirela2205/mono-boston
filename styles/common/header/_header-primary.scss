@@ -1,0 +1,63 @@
+.header-primary {
+  background-color: $gray-primary;
+  color: $gray-secondary;
+  font-size: 19px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+    a {
+      font-size: 30px;
+    }
+
+    form {
+      border: 1px solid $brand-primary;
+      height: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+      flex-grow: 0.5;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background-color: $gray-primary;
+        border: none;
+        color: $brand-primary;
+        height: 20px;
+      }
+
+      input {
+        background-color: $gray-primary;
+        border: none;
+
+        &[placeholder] {
+          font-size: 10px;
+          line-height: 13px;
+          text-transform: lowercase;
+          font-family: 'Roboto';
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  nav > ul {
+    height: 52px;
+
+    a {
+      transition: color 0.2s linear;
+      font-size: 19px;
+      line-height: 22px;
+      color: $gray-secondary;
+
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+  }
+}

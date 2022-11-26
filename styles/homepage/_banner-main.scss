@@ -1,0 +1,17 @@
+.banner-main {
+  background: $gray-primary url('/images/banners/banner03.png') center center /
+    cover no-repeat;
+  height: 177px;
+  width: 100%;
+
+  &-inner {
+    position: relative;
+    height: inherit;
+  }
+
+  .button-inverted {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+}

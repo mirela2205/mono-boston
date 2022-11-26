@@ -1,0 +1,36 @@
+.product-tile {
+  text-align: center;
+  line-height: 39px;
+  font-size: 22px;
+
+  &-image {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      font-size: 20px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  h1 {
+    line-height: 39px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  &-pricing {
+    margin-bottom: 36px;
+  }
+}

@@ -2,29 +2,32 @@
   background-color: $white;
   border: 1px solid $black;
   text-transform: lowercase;
-  padding: 10px 17px;
+  padding: 4px 15px;
+  font-size: 12px;
   cursor: pointer;
   display: inline-block;
+  transition: color 0.2s linear, background-color 0.2s linear;
+  font-family: 'Roboto', sans-serif;
+
+  &:hover {
+    color: $white;
+    background-color: $gray-tertiary;
+  }
+
+  &-secondary {
+    text-transform: uppercase;
+    background-color: transparent;
+    width: 75px;
+    height: 25px;
+  }
+
+  &-primary {
+    border: none;
+  }
 
   &-inverted {
+    font-size: 10px;
     text-transform: uppercase;
-    padding: 5px 15px;
-    font-size: 16px;
-    background-color: transparent;
-  }
-}
-
-@mixin buttons {
-  @media (max-width: 768px) {
-    @content;
-  }
-}
-
-.button-secondary {
-  display: none;
-
-  @include buttons {
-    display: block;
-    text-transform: uppercase;
+    line-height: 13px;
   }
 }
