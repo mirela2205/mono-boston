@@ -4,10 +4,16 @@
   text-transform: lowercase;
   padding: 4px 15px;
   font-size: 12px;
+  line-height: 22px;
   cursor: pointer;
   display: inline-block;
   transition: color 0.2s linear, background-color 0.2s linear;
   font-family: 'Roboto', sans-serif;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 22px;
+    line-height: 22px;
+  }
 
   &:hover {
     color: $white;
@@ -17,12 +23,15 @@
   &-secondary {
     text-transform: uppercase;
     background-color: transparent;
-    width: 75px;
-    height: 25px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 16px;
+    }
   }
 
   &-primary {
     border: none;
+    padding: 10px 17px;
   }
 
   &-inverted {

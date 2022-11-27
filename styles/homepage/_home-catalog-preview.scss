@@ -1,7 +1,63 @@
 .home-catalog-preview {
+  > :first-child {
+    border-top: 1px solid $gray-primary;
+    padding-top: 8px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 35px;
+      line-height: 47px;
+      margin-bottom: 23px;
+    }
+  }
+
   .product-tiles {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.26264%;
+
+    @include media-breakpoint-up(lg) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      // pe mobil ar fi repeat (1,1fr) si row gap
+      gap: 1.769911%;
+    }
+  }
+
+  &:first-child {
+    .catalog-ctas {
+      display: none;
+    }
+  }
+
+  &:nth-child(2) {
+    .catalog-ctas {
+      display: none;
+    }
+  }
+
+  .catalog-ctas {
+    margin-top: 31px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 70px;
+    }
+  }
+
+  &:last-child {
+    .catalog-ctas {
+      button {
+        @include media-breakpoint-up(lg) {
+          border: 1px solid $gray-primary;
+        }
+      }
+    }
   }
 }

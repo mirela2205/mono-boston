@@ -3,8 +3,8 @@ import ProductTile from '../../catalog/ProductTile';
 export default function HomeCatalogPreview() {
   return (
     <>
-      <section className="home-catalog-preview container my-lg-5">
-        <header>
+      <section className="home-catalog-preview container my-5 border-top">
+        <header className="text-center">
           <h1>New Stuff</h1>
         </header>
 
@@ -24,7 +24,7 @@ export default function HomeCatalogPreview() {
         </ul>
 
         <footer class="catalog-ctas">
-          <button href="/" title="view all">
+          <button href="/" title="view all" className="button button-primary">
             view all
           </button>
         </footer>

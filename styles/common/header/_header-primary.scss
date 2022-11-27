@@ -19,10 +19,11 @@
       border: 1px solid $brand-primary;
       height: 30px;
       padding-left: 15px;
-      padding-right: 15px;
+      padding-right: 10px;
       flex-grow: 0.5;
       display: flex;
       justify-content: space-between;
+      width: 233px;
 
       button {
         background-color: $gray-primary;
