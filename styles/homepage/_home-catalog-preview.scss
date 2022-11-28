@@ -4,7 +4,7 @@
     padding-top: 8px;
   }
 
-  header h1 {
+  > header h1 {
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
@@ -25,17 +25,11 @@
     @include media-breakpoint-up(lg) {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      // pe mobil ar fi repeat (1,1fr) si row gap
       gap: 1.769911%;
     }
   }
 
-  &:first-child {
-    .catalog-ctas {
-      display: none;
-    }
-  }
-
+  &:first-child,
   &:nth-child(2) {
     .catalog-ctas {
       display: none;

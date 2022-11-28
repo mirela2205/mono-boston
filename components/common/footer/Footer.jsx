@@ -111,7 +111,7 @@ export default function Footer() {
               placeholder="Email"
             ></input>
 
-            <div className="reverse">
+            <div>
               <div className="privacy">
                 <input
                   type="checkbox"

@@ -1,7 +1,6 @@
 .home-content {
   display: flex;
   flex-direction: column;
-  margin-bottom: 150px;
 
   @include media-breakpoint-up(lg) {
     flex-direction: row;
@@ -11,7 +10,6 @@
     margin-bottom: 26px;
 
     @include media-breakpoint-up(lg) {
-      margin-bottom: 0px;
       width: 50%;
       margin-right: 140px;
     }

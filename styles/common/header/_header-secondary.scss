@@ -74,11 +74,24 @@
         }
       }
 
+      > :nth-child(2) h1 {
+        font-size: 19px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $black;
+        font-family: 'Roboto';
+      }
+
       ul {
         display: flex;
+        margin-bottom: 10px;
         gap: 10px;
         padding-left: 30px;
-        font-size: 33px;
+        font-size: 20px;
+
+        @include media-breakpoint-up(lg) {
+          font-size: 33px;
+        }
       }
     }
   }

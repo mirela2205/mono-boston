@@ -21,12 +21,6 @@
   }
 
   h1 {
-    margin-bottom: 5px;
-
-    @include media-breakpoint-up(lg) {
-      margin-bottom: 10px;
-    }
-
     a {
       line-height: 21px;
       font-size: 16px;
