@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Footer from '../components/common/Footer/Footer';
 import Header from '../components/common/Header/Header';
 import HomeCatalogPreview from '../components/common/homepage/HomeCatalogPreview';
