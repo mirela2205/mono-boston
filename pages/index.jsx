@@ -1,5 +1,5 @@
-import Footer from '../components/common/Footer/Footer';
-import Header from '../components/common/Header/Header';
+import Footer from '../components/common/footer/Footer';
+import Header from '../components/common/header/Header';
 import HomeCatalogPreview from '../components/common/homepage/HomeCatalogPreview';
 import HomeContent from '../components/common/homepage/HomeContent';
 
